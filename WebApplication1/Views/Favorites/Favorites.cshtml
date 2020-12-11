@@ -1,0 +1,46 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using WebApplication1.Areas.Identity.Data
+@inject SignInManager<WebApplication1User> SignInManager
+@inject UserManager<WebApplication1User> UserManager
+@model IEnumerable<WebApplication1.ViewModels.Favorite>
+
+
+@{ ViewData["Title"] = "Favorites";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<body style="background-color: white;">
+    <div>
+        <h1 style="text-align: center;" class="mine-favoritter">Mine favoritter</h1>
+        <table class="table table-white">
+            <thead>
+                <tr>
+                    <th>
+                        <h3>Adresse</h3>
+                    </th>
+                    <th>
+                        <h3>Pris</h3>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+
+                            @Html.DisplayFor(modelItem => item.Address) 
+
+                            @*<button type="button" class="btn btn-success">@Html.DisplayFor(modelItem => item.Address)</button>*@
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-success" style="color: black; font-weight: 600;">@Html.DisplayFor(modelItem => item.Pris),-</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+

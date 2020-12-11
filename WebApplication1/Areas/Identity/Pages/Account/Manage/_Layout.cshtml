@@ -1,0 +1,30 @@
+﻿@{
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout))
+    {
+        Layout = (string)parentLayout;
+    }
+    else
+    {
+        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    }
+}
+<body style="background-color: white; display: flex;">
+        <h2 style=" text-align: center; background-color: white; margin-bottom: 5vh; height: 5vh;">Min Side</h2>
+        <a href="/Identity/account/logout">Logg ut</a>
+        
+    <div>
+        <div class="row" style="height: 650px;">
+            <div class="col-md-3">
+                <partial name="_ManageNav" />
+            </div>
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+</body>
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}

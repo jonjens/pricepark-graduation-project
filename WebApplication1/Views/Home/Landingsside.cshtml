@@ -1,0 +1,111 @@
+﻿@{ 
+    ViewData["Title"] = "Landingsside";
+    Layout = null; 
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <title>Document</title> -->
+    <!--<link rel="stylesheet" type="text/css" href="LandingssideMedCookie.css"> -->
+
+    <title>PricePark</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <!-- font cdn -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" type="text/css" href="LandingssideMedCookie.css" />
+    <!-- jquery.cdn -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+
+<body>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- carousel-meny -->
+<!--
+    <div class="row">
+    <div class="col-md-12 navbar">
+        <header>
+        </header>
+        <a href="index.html" class="logo navbar-brand text-white offset-md-2"></a>
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link">Samarbeidspartnere?</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Kontakt oss?</a></li>
+        </ul>
+    </div> -->
+    <!-- slider banner	 -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="info">
+                    <h1>PricePark</h1>
+                    <p>Den beste tjenesten for lokalisering av de billigste parkeringsplassene</p>
+                    <input type="button" class="btn-info-start" value="Gå videre" onclick=" relocate_home()">
+                    <script>
+                        function relocate_home() {
+                            location.href = "/Home";
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="info">
+                    <h1>Hele landet</h1>
+                    <p>I kartet vårt finner du over 8000 parkeringsplasser i hele Norge</p>
+                    <input type="button" class="btn-info-start" value="Gå videre" onclick=" relocate_home()">
+                    <script>
+                        function relocate_home() {
+                            location.href = "/Home";
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="info">
+                    <h1>Personlig profil</h1>
+                    <p>Lag egen profil for å kunne lagre dine favoritt parkeringsplasser</p>
+                    <input type="button" class="btn-info-start" value="Gå videre" onclick=" relocate_home()">
+                    <script>
+                        function relocate_home() {
+                            location.href = "/Home";
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- scripts -->
+    <!-- bootstrap javascript cdn -->
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

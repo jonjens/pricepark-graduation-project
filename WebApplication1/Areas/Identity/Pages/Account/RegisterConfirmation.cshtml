@@ -1,0 +1,22 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Register confirmation";
+}
+
+<body style="background-color: white;">
+    <h1>Bekreftelse på registrering</h1>
+    @{
+        if (@Model.DisplayConfirmAccountLink)
+        {
+            <p>
+               <a id="confirm-link" href="@Model.EmailConfirmationUrl">Trykk her for å bekrefte din e-post adresse</a>
+            </p>
+        }
+        else
+        {
+
+        }
+    }
+</body>
+

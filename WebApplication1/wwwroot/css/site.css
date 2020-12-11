@@ -1,0 +1,278 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: black;
+}
+
+.btn-primary {
+    color: black;
+    background-color: #9FC68E;
+    border-color: #9FC68E;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: black;
+    background-color: #9FC68E;
+    border-color: #9FC68E;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+/*
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+    }
+     Vertically center the text there */
+
+
+
+footer {
+    background: #9FC68E;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    grid-area: footer;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+footer a {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    transition: all .5s ease;
+}
+
+footer a:first-child {
+    border-left: 1px solid #9FC68E;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.hus {
+    float: right !important;
+    margin-right: 10vw;
+}
+
+.hjerte {
+    float: left !important;
+    margin-left: 10vw;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100vw !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    grid-area: container;
+    background-color: white;
+}
+body{
+   
+    grid-template-areas: 
+        "container"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 12fr 1fr;
+    width: 100vw !important;
+    height: auto !important;
+    background-color: #9FC68E;
+}
+.btn-success {
+    background-color: #9fc68e;
+}
+/*Landingsside starter her*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&dislpay=swap');
+/* Kan fjernes hvis vi ikke skal ha 'om oss'
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+
+    .navbar .logo {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-weight: 750;
+        letter-spacing: 2px;
+    }
+
+    .navbar ul.nav {
+        margin-right: 15%;
+    }
+
+        .navbar ul.nav li.active,
+        .navbar ul.nav li:hover {
+            background: rgba(255, 255, 255, 0.5);
+            color: #000;
+        }
+
+        .navbar ul.nav li a {
+            color: #fff;
+            font-size: 1em;
+            font-weight: 500;
+        }
+
+        .navbar ul.nav li.active a,
+        .navbar ul.nav li:hover a {
+            color: #000;
+        }
+*/
+/*slider*/
+#carouselExampleIndicators {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+    #carouselExampleIndicators .carousel-inner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: white;
+    }
+
+        #carouselExampleIndicators .carousel-inner:before {
+            position: absolute;
+            content: '';
+            background: rgba(0, 0, 0, 0.45);
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        #carouselExampleIndicators .carousel-inner .carousel-item {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background: url('BakgrunnMedRadius.png');
+            background-size: auto 100%;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+            #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
+                background: url('BakgrunnsbildeHvittFilter.png');
+                background-size: auto 100%;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
+                background: url('BakgrunnsbildeHvittFilter.png');
+                background-size: auto 100%;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            #carouselExampleIndicators .carousel-inner .carousel-item .info {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                height: auto;
+                width: 100%;
+                z-index: 1;
+                text-align: center;
+            }
+
+            #carouselExampleIndicators .carousel-inner .carousel-item h1 {
+                height: auto;
+                color: white;
+                width: 100%;
+                z-index: 1;
+                text-align: center;
+                font-size: 5em;
+                font-weight: 520;
+            }
+
+            #carouselExampleIndicators .carousel-inner .carousel-item p {
+                height: auto;
+                color: white;
+                width: 100%;
+                z-index: 1;
+                text-align: center;
+                font-size: 1.1em;
+                font-weight: 500;
+            }
+
+
+.btn-info-start {
+    background-color: #9FC68E;
+    border-color: #9FC68E;
+    color: white;
+}
+
+.row {
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
